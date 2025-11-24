@@ -5,78 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIDROMODE 1000T PRES</title>
     <style>
-        /* MODERN STİLLER */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            color: #333;
         }
-        
         .container {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
             background: white;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             overflow: hidden;
         }
-        
         .header {
             background: linear-gradient(135deg, #2c3e50, #34495e);
             color: white;
             padding: 30px;
             text-align: center;
         }
-        
         .header h1 {
             margin: 0;
             font-size: 28px;
             font-weight: 600;
         }
-        
         .header p {
             margin: 10px 0 0 0;
             opacity: 0.9;
             font-size: 16px;
         }
-        
         .content {
             padding: 30px;
         }
-        
-        .document-section {
-            text-align: center;
+        .doc-section {
             margin-bottom: 30px;
         }
-        
-        .document-section h2 {
+        .section-title {
             color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 22px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #3498db;
         }
-        
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
         .doc-button {
-            display: inline-block;
+            display: block;
             background: linear-gradient(135deg, #27ae60, #2ecc71);
             color: white;
             text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 18px;
+            padding: 16px 20px;
+            border-radius: 10px;
             font-weight: 500;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+            text-align: center;
+            font-size: 15px;
         }
-        
         .doc-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
-            background: linear-gradient(135deg, #219a52, #27ae60);
         }
-        
+        .button-blue { 
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        .button-blue:hover {
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        .button-orange { 
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+        }
+        .button-orange:hover {
+            box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+        }
+        .button-purple { 
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);
+        }
+        .button-purple:hover {
+            box-shadow: 0 6px 20px rgba(155, 89, 182, 0.4);
+        }
+        .button-red { 
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+        .button-red:hover {
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
         .footer {
             text-align: center;
             padding: 20px;
@@ -84,28 +106,13 @@
             color: #7f8c8d;
             font-size: 14px;
         }
-        
-        /* MOBILE UYUMLULUK */
         @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            
-            .header {
-                padding: 20px;
-            }
-            
-            .header h1 {
-                font-size: 24px;
-            }
-            
             .content {
                 padding: 20px;
             }
-            
             .doc-button {
-                padding: 12px 25px;
-                font-size: 16px;
+                padding: 14px 16px;
+                font-size: 14px;
             }
         }
     </style>
@@ -117,21 +124,66 @@
         </div>
         
         <div class="content">
-            <div class="document-section">
-                <h2>🔧 Hidrolik Sistem Şeması</h2>
-                <!-- BURAYA KENDİ GOOGLE DRIVE LİNKİNİ YAPIŞTIR -->
-                <a href="https://drive.google.com/file/d/1WGcDyVuciqEyUCiYyfbRIi3lf0daTd1z/view?usp=sharing/view?usp=sharing" 
-                   
-                   class="doc-button" 
-                   target="_blank">
-                    📄 Hidrolik Şemayı Aç
-                </a>
-                
+            <!-- ELEKTRİKSEL ŞEMALAR -->
+            <div class="doc-section">
+                <div class="button-grid">
+                    <a href="https://drive.google.com/file/d/1d_8DzxXrzsKdJ09Rv-wwC85uniSdohK3/view?usp=sharing" class="doc-button button-blue" target="_blank">
+                        Ana Pano Santrali
+                    </a>
+                    <a href="https://drive.google.com/file/d/1rgP5H3K29YJJwwIHtNAj0D2FWos4APdO/view?usp=sharing" class="doc-button button-blue" target="_blank">
+                        Hidrolik Ünite Santrali
+                    </a>
+                    <a href="https://drive.google.com/file/d/1sPUC6rzMkv-Gtu0KKVeiLNdqVyG7rftG/view?usp=sharing" class="doc-button button-blue" target="_blank">
+                        Operatör Panel Santrali
+                    </a>
+                </div>
+            </div>
+
+            <!-- ARIZA KODLARI -->
+            <div class="doc-section">
+                <div class="button-grid">
+                    <a href="https://drive.google.com/file/d/166QWy06uXxj52gqS4wMfoGE82oIdFGdn/view?usp=sharing" class="doc-button button-red" target="_blank">
+                        Profinet Haberleşme Bağlantıları ve PLC Listesi
+                    </a>
+                    <a href="https://drive.google.com/file/d/1HSlCMnOWqyLuB3tqtIegg4Y-RDLQ115o/view?usp=sharing" class="doc-button button-red" target="_blank">
+                        Box Bağlantı Kutusu - 1
+                    </a>
+                    <a href="https://drive.google.com/file/d/1Rq-g1PnivET8h8mnAOrV29sphGNuRB8p/view?usp=sharing" class="doc-button button-red" target="_blank">
+                        Box Bağlantı Kutusu - 2
+                    </a>
+                </div>
+            </div>
+
+            <!-- HİDROLİK ŞEMALAR -->
+            <div class="doc-section">
+                <div class="button-grid">
+                    <a href="https://drive.google.com/file/d/1wlaffIIAWhvjoSjHU9uSOsPXTQt7Srx9/view?usp=sharing" class="doc-button button-purple" target="_blank">
+                        Makine Arka Pult
+                    </a>
+                    <a href="https://drive.google.com/file/d/11dScfpd9UjjehStC61cJ-vszZrGSirDU/view?usp=sharing" class="doc-button button-purple" target="_blank">
+                        Makine Ön Pult
+                    </a>
+                    <a href="https://drive.google.com/file/d/1WGcDyVuciqEyUCiYyfbRIi3lf0daTd1z/view?usp=sharing" class="doc-button button-purple" target="_blank">
+                        Hidrolik Şema
+                    </a>
+                </div>
+            </div>
+
+            <!-- BAKIM DOKÜMANLARI -->
+            <div class="doc-section">
+                <div class="button-grid">
+                    <a href="https://drive.google.com/file/d/1P-b_g7aod3pgFYQ7uyHPZb0x3LnqGqJz/view?usp=sharing" class="doc-button button-orange" target="_blank">
+                        Malzeme Listesi
+                    </a>
+                    <a href="https://drive.google.com/file/d/1DBTg5xAazcB9bO-2OFZ0AHoP2apF22_J/view?usp=sharing" class="doc-button button-orange" target="_blank">
+                        Sipariş Listesi
+                    </a>
+                </div>
             </div>
         </div>
-        
+
         <div class="footer">
-            <p>Son Güncelleme: 24.11.2024</p>
+            <p>🔄 Son Güncelleme: 24 Kasım 2024</p>
         </div>
     </div>
 </body>
