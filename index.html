@@ -4,20 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1000T Pres - Hidrolik Şema</title>
+    <style>
+        /* MODERN STİLLER */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .document-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .document-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        
+        .doc-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        }
+        
+        .doc-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+            background: linear-gradient(135deg, #219a52, #27ae60);
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        /* MOBILE UYUMLULUK */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .doc-button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>1000T Pres - Hidrolik Şema</h1>
-    <p><strong>Model:</strong> HFA-1000 | <strong>Seri No:</strong> 1000T-2024</p>
-    <hr>
-
-    <h2>🔧 Hidrolik Sistem Şeması</h2>
-    
-    <!-- BURAYA GOOGLE DRIVE LİNKİNİ YAPIŞTIR -->
-    <a href="https://drive.google.com/file/d/1WGcDyVuciqEyUCiYyfbRIi3lf0daTd1z/view?usp=drive_link" target="_blank" style="font-size: 20px;">
-        📄 1000T Hidrolik Şemasını Aç
-    </a>
-
-    <hr>
-    <p><em>Son Güncelleme: 24.11.2024</em></p>
+    <div class="container">
+        <div class="header">
+            <h1>🏭 1000T Pres</h1>
+            <p>Model: HFA-1000 | Seri No: 1000T-2024</p>
+        </div>
+        
+        <div class="content">
+            <div class="document-section">
+                <h2>🔧 Hidrolik Sistem Şeması</h2>
+                <!-- BURAYA KENDİ GOOGLE DRIVE LİNKİNİ YAPIŞTIR -->
+                <a href="https://drive.google.com/file/d/https://drive.google.com/file/d/1WGcDyVuciqEyUCiYyfbRIi3lf0daTd1z/view?usp=drive_link/view?usp=sharing" 
+                   class="doc-button" 
+                   target="_blank">
+                    📄 Hidrolik Şemayı Aç
+                </a>
+                
+                <div class="info-box">
+                    <strong>Not:</strong> Butona tıklayarak hidrolik sistem şemasına ulaşabilirsiniz.
+                    PDF dosyası yeni sekmede açılacaktır.
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Son Güncelleme: 24.11.2024</p>
+        </div>
+    </div>
 </body>
 </html>
